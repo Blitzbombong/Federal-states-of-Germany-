@@ -1,0 +1,13 @@
+body {
+    margin: 5px;
+}
+
+header {
+    background: lightgrey;
+    padding: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #666666;
+}
+
