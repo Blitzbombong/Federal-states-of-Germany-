@@ -12,17 +12,17 @@ async function init() {
 
 // render(filter) ist verantwortlich fur Rendern (Anzeigen) von Inhalten auf einer Webseite.
 function render(filter) {
-    let content = document.getElementById('content');
-    content.innerHTML = '';
+    let content = document.getElementById('content');// ruft die ID 'content' auf
+    content.innerHTML = ''; // leert das vorherige Inhalt 
 
     for (let i = 0; i  < bundeslaender.length; i++) {
         const land = bundeslaender[i];
-        const population = (land['population'] + '').replace('.',',');
-        const firstLetter = land['name'].charAt(0);
+        const population = (land['population'] + '').replace('.',',');// replace wird verwendet um ein Pukt durch Komma zu ersetzen. 
+        const firstLetter = land['name'].charAt(0);// extrahiert den ersten Buchstaben des Landes.
 
         if (!filter || filter == firstLetter) {
             content.innerHTML += generateLink(land, population);
-        }
+        }                                                        // Pruft den Esten Buchstaben des Bundeslaender.
 
         if (!letters.includes(firstLetter)) {
             letters.push(firstLetter);
