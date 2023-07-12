@@ -35,3 +35,15 @@ function render(filter) {
 function setFilter(letter) {
     render(letter);
 }
+
+
+// rendert die Buhcstaben die Filtern dann die Bundesleander.
+function renderLetters() {
+    let lettrbox = document.getElementById('letterbox');
+    lettrbox.innerHTML = '';
+
+    for (let i = 0; i < letters.length; i++) {
+        const letter = letters[i];
+        lettrbox.innerHTML += `<div onclick="setFilter('${letter}')" class="letter">${letter}</div>`;
+    }
+}
