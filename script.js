@@ -30,3 +30,8 @@ function render(filter) {
     }
     renderLetters();
 }
+
+
+function setFilter(letter) {
+    render(letter);
+}
