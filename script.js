@@ -47,3 +47,12 @@ function renderLetters() {
         lettrbox.innerHTML += `<div onclick="setFilter('${letter}')" class="letter">${letter}</div>`;
     }
 }
+
+
+// Die Funktion generiert den HTML - Code fur einen Link. target="_blank" -öffnet einen neuen Tab. 
+function generateLink(land, population) {
+    return `<a class="bbox" href="${land['url']}" target="_blank"> 
+    <div>${land['name']}</div>
+    <div class="text-gray">${population} Millionen</div>
+    </a>`;
+}
