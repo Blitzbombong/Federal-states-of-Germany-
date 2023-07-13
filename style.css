@@ -1,5 +1,6 @@
 body {
     margin: 5px;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -9,6 +10,7 @@ header {
     font-weight: bold;
     text-transform: capitalize;
     color: #666666;
+    font-family: 'Roboto', bold 700 sans-serif;
 }
 
 .bbox {
@@ -26,9 +28,13 @@ header {
     border: 5px solid gray;
 }
 
+.text-gray {
+    color: rgb(162, 159, 159);
+}
+
 #content {
     display: flex;
-    flex-wrap: wrap;background: lightblue;
+    flex-wrap: wrap;
 }
 
 #letterbox {
